@@ -1,6 +1,5 @@
 package GCI.grokking.DSA.A_PatternSlidingWindow.d_Longest_Substring_with_K_Distinct_Characters;
 
-import com.example.GrokkingCodingInterview.pattern_sliding_window.pattern_sliding_window.SmallestSubarray;
 
 import java.util.HashMap;
 import java.util.Map;
