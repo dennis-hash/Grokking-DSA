@@ -60,6 +60,10 @@ public class MinSizeSubArraySum {
 
             while (windowSum >= S){
                 minLength = Math.min(minLength, windowEnd - windowStart + 1);
+                System.out.println("windowEnd " + windowEnd);
+                System.out.println("windowStart " + windowStart);
+                System.out.println("minLength " + minLength);
+
                 windowSum -= arr[windowStart];
                 windowStart ++;
             }
@@ -68,10 +72,27 @@ public class MinSizeSubArraySum {
 
         return minLength == Integer.MAX_VALUE ? 0 :minLength;
     }
+
     public static void main (String[] args){
         int result = MinSizeSubArraySum.findMinSubArray(7, new int[] {7, 2, 1, 5, 2, 8});
         System.out.println("MinSubArray size" + result);
 
+    }
+
+    public static class MinValueExample {
+
+        public static void main(String[] args) {
+            int[] numbers = {5, 2, 9, 1, 7};
+            int minLength = Integer.MAX_VALUE;
+
+            for (int number : numbers) {
+                if (number < minLength) {
+                    minLength = number;
+                }
+            }
+
+            System.out.println("The minimum value in the array is: " + minLength);
+        }
     }
 
 }
