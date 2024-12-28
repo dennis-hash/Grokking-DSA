@@ -22,6 +22,7 @@ public class AllMissingNumbers {
             } else {
                 i++;
             }
+            System.out.println(Arrays.toString(arr));
         }
 
         for (int j = 0; j < arr.length; j++){
@@ -33,7 +34,7 @@ public class AllMissingNumbers {
       return  missingNumbers;
     }
     public static void main(String[] args){
-        int[] arr = new int[] {2, 4, 1, 2};
+        int[] arr = new int[] {5,  3, 4 ,2};
         System.out.println(AllMissingNumbers.findallMissingNumbers(arr));
 
     }
