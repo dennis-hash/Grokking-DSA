@@ -35,9 +35,7 @@ public class PairWithTargetSum {
             }else {
                 startPointer++;
             }
-
         }
-
         return new int[] { startPointer, endPointer};
     }
     public static void main (String[] args){
